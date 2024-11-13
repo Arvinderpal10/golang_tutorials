@@ -26,10 +26,10 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	fmt.Fprintf(w, "Post request successful \n")
-	name := r.FormValue("name")
-	address := r.FormValue("address")
-	fmt.Fprintf(w, "Name : %s\n", name)
-	fmt.Fprintf(w, "Address : %s\n", address)
+	fname := r.FormValue("fname")
+	lname := r.FormValue("lname")
+	fmt.Fprintf(w, "First Name : %s\n", fname)
+	fmt.Fprintf(w, "Last Name : %s\n", lname)
 
 }
 func main() {
